@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>グリッドレイアウト</title>
+  <meta name="description" content="グリッドレイアウト">
+  <meta name="keywords" content="グリッドレイアウト, grid items, masonry">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>
+      <a href="https://masonry.desandro.com/" target="_blank">Masonry</a>
+    </h1>
+    <nav class="nav">
+      <ul>
+        <li class="nav-item"><a href="#">SAMPLE</a></li>
+        <li class="nav-item"><a href="#">SAMPLE</a></li>
+        <li class="nav-item"><a href="#">SAMPLE</a></li>
+        <li class="nav-item"><a href="#">SAMPLE</a></li>
+        <li class="nav-item"><a href="#">SAMPLE</a></li>
+        <li class="nav-item"><a href="#">SAMPLE</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="photo">
+    <article class="item item-l">
+      <img class="image" src="images/image_L_1.jpg" alt="画像">
+    </article>
+    <article class="item item-m">
+      <img class="image" src="images/image_M_1.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_6.jpg" alt="画像">
+    </article>
+    <article class="item item-m">
+      <img class="image" src="images/image_M_2.jpg" alt="画像">
+    </article>
+    <article class="item item-m">
+      <img class="image" src="images/image_M_4.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_1.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_2.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_3.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_4.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_5.jpg" alt="画像">
+    </article>
+    <article class="item item-m">
+      <img class="image" src="images/image_M_3.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_7.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_8.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_9.jpg" alt="画像">
+    </article>
+    <article class="item">
+      <img class="image" src="images/image_S_10.jpg" alt="画像">
+    </article>
+  </section>
+  <footer class="footer">
+    <p>copyright(c)kawai junko. All rights reserved.</p>
+  </footer>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
+  <script>
+    new Masonry('section.photo', {
+      itemSelector: '.item',
+      columnWidth: 180,
+      gutter: 4,
+      transitionDuration: '0.8s',
+      stagger: 30
+    });
+  </script>
+</body>
+</html>
